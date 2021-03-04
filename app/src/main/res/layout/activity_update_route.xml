@@ -1,0 +1,111 @@
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/greybg"
+        tools:context=".engineer.UpdateRouteActivity">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl_toolbar"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:background="@color/textColor"
+            android:layout_alignParentTop="true">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrowback"
+                android:layout_centerVertical="true"
+                android:visibility="visible"
+                app:tint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/toolbarTitle"
+                android:text="@string/updateroute"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:padding="10dp"
+                android:layout_toRightOf="@id/iv_back"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/padding_10">
+
+            <TextView
+                android:id="@+id/tv_updateroute"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/updateroute"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="@dimen/padding_14"
+                android:textColor="@color/white"
+                android:padding="@dimen/padding_10"
+                android:background="@drawable/btn_background"
+                android:backgroundTint="@color/colorBrown"
+                android:layout_toRightOf="@id/iv_back"/>
+
+            <TextView
+                android:id="@+id/tv_scanqr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/scan"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/padding_10"
+                android:textSize="@dimen/padding_14"
+                android:textColor="@color/white"
+                android:padding="@dimen/padding_10"
+                android:background="@drawable/btn_background"
+                android:backgroundTint="@color/colorBrown" />
+
+            <TextView
+                android:id="@+id/tv_ststs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/wastestatus"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/padding_10"
+                android:textSize="@dimen/padding_14"
+                android:textColor="@color/black"
+                android:padding="@dimen/padding_10"
+                android:backgroundTint="@color/colorBrown" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rl_medicHistory"
+                android:layout_below="@+id/rl_toolbar"
+                android:visibility="visible">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_medicHistory"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</layout>

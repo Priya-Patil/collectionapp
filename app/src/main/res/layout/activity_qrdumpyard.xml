@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/llSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:minEms="4"
+                android:text="Format :"
+                android:textColor="@color/white"
+                android:textIsSelectable="true"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tvScanContent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1.0"
+                android:textColor="@android:color/black"
+                android:textIsSelectable="true"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:minEms="4"
+                android:text="Content :"
+                android:textColor="@color/black"
+                android:textIsSelectable="true"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:id="@+id/tvScanFormat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1.0"
+                android:textColor="@android:color/black"
+                android:textIsSelectable="true"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!--dumpyard code  -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rl_tripSummaryMain"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ll_tripSummary"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl_toolbar"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:background="@color/colorBrown"
+            android:layout_alignParentTop="true">
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/padding_10"
+                android:paddingRight="@dimen/padding_10"
+                android:paddingBottom="@dimen/padding_10"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:layout_centerVertical="true"
+                android:visibility="visible"
+                app:tint="@color/white"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/toolbarTitle"
+                android:text="@string/dumpyard"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:paddingRight="@dimen/padding_10"
+                android:paddingTop="@dimen/padding_10"
+                android:paddingBottom="@dimen/padding_10"
+                android:layout_toRightOf="@id/iv_back"/>
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/drygarbage"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/textColor"
+                android:paddingRight="@dimen/padding_10"
+                android:paddingBottom="@dimen/padding_10"
+                android:layout_toRightOf="@id/img_openDrawer"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circular_tvborder"
+                android:layout_marginTop="@dimen/padding_10"
+                >
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sp_dryGarbage"
+                    android:padding="@dimen/padding_10"
+                    android:spinnerMode="dialog"
+                    />
+            </LinearLayout>
+
+
+          <!--  <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/drygarbageqty"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/textColor"
+                android:paddingRight="@dimen/padding_10"
+                android:paddingTop="@dimen/padding_10"
+                android:paddingBottom="@dimen/padding_10"
+              />-->
+
+        </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/wetgarbage"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/textColor"
+                        android:paddingRight="@dimen/padding_10"
+                        android:paddingTop="@dimen/padding_10"
+                        android:paddingBottom="@dimen/padding_10"
+                        android:layout_toRightOf="@id/img_openDrawer"/>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/circular_tvborder"
+                        android:layout_marginTop="@dimen/padding_10"
+                        >
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/sp_wetGarbage"
+                            android:padding="@dimen/padding_10"
+                            android:spinnerMode="dialog"
+                            />
+                    </LinearLayout>
+
+
+                    <!--  <EditText
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:hint="@string/drygarbageqty"
+                          android:textAllCaps="true"
+                          android:textStyle="bold"
+                          android:layout_marginTop="5dp"
+                          android:textColor="@color/textColor"
+                          android:paddingRight="@dimen/padding_10"
+                          android:paddingTop="@dimen/padding_10"
+                          android:paddingBottom="@dimen/padding_10"
+                        />-->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mixgarbage"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/textColor"
+                        android:paddingRight="@dimen/padding_10"
+                        android:paddingTop="@dimen/padding_10"
+                        android:paddingBottom="@dimen/padding_10"
+                        android:layout_toRightOf="@id/img_openDrawer"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/circular_tvborder"
+                        android:layout_marginTop="@dimen/padding_10"
+                        >
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sp_mixGarbage"
+                        android:padding="@dimen/padding_10"
+                        android:spinnerMode="dialog"
+                     />
+                    </LinearLayout>
+                    <!--  <EditText
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:hint="@string/drygarbageqty"
+                          android:textAllCaps="true"
+                          android:textStyle="bold"
+                          android:layout_marginTop="5dp"
+                          android:textColor="@color/textColor"
+                          android:paddingRight="@dimen/padding_10"
+                          android:paddingTop="@dimen/padding_10"
+                          android:paddingBottom="@dimen/padding_10"
+                        />-->
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_submitnsend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/submitnsend"
+                android:textStyle="bold"
+                android:textSize="@dimen/largeTextSize"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:layout_margin="30dp"
+                android:padding="@dimen/padding_10"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/btn_background"
+                android:backgroundTint="@color/colorBrown"/>
+
+        </RelativeLayout>
+
+    <!-- End dumpyard code  -->
+</LinearLayout>
+</RelativeLayout>
+</layout>

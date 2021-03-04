@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:id="@+id/card_video"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="2dp"
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="5dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:id="@+id/ll_title">
+
+            <TextView
+                android:id="@+id/tv_YardNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:drawableLeft="@drawable/ic_yard"
+                android:drawablePadding="5dp"
+                android:padding="5dp"
+                android:text="date"
+                android:textColor="@color/textColor"
+                android:textSize="12sp" />
+        <TextView
+            android:id="@+id/tv_TripSummrydate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:padding="5dp"
+            android:layout_below="@+id/tv_YardNo"
+            android:text="date"
+            android:drawableLeft="@drawable/ic_calender"
+            android:drawablePadding="5dp"
+            android:textColor="@color/textColor"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/tv_tripSummuryTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="time"
+            android:layout_below="@id/tv_TripSummrydate"
+            android:layout_marginRight="5dp"
+            android:drawableLeft="@drawable/ic_clock"
+            android:drawablePadding="5dp"
+            android:textColor="@color/textColor"
+            android:textSize="12sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

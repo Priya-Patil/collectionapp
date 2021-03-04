@@ -1,0 +1,386 @@
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/greybg"
+        tools:context=".engineer.RouteSummaryActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl_toolbar"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:background="@color/colorBrown"
+            android:layout_alignParentTop="true">
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/padding_10"
+                android:paddingRight="@dimen/padding_10"
+                android:paddingBottom="@dimen/padding_10"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:layout_centerVertical="true"
+                android:visibility="visible"
+                app:tint="@color/white"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/toolbarTitle"
+                android:text="@string/tripsummary"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:paddingRight="@dimen/padding_10"
+                android:paddingTop="@dimen/padding_10"
+                android:paddingBottom="@dimen/padding_10"
+                android:layout_toRightOf="@id/iv_back"/>
+
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/padding_10">
+
+            <LinearLayout
+                android:id="@+id/ll_business_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:padding="@dimen/fontStyle5">
+
+                <TextView
+                    android:paddingEnd="5dp"
+                    android:paddingStart="5dp"
+                    android:textSize="14sp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/totalgateend"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    />
+
+                <EditText
+                    android:paddingEnd="5dp"
+                    android:paddingStart="5dp"
+                    android:id="@+id/et_businessname"
+                    android:textSize="14sp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:editable="false"
+                    android:background="@null"
+                    android:text="0"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_business_name1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:padding="@dimen/fontStyle5">
+
+                <TextView
+                    android:paddingEnd="5dp"
+                    android:paddingStart="5dp"
+                    android:textSize="14sp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/segregatedgates"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    />
+
+                <EditText
+                    android:paddingEnd="5dp"
+                    android:paddingStart="5dp"
+                    android:id="@+id/et_segregatedgates"
+                    android:textSize="14sp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:text="0"
+                    android:editable="false"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_business_name3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:padding="@dimen/fontStyle5">
+
+                <TextView
+                    android:paddingEnd="5dp"
+                    android:paddingStart="5dp"
+                    android:textSize="14sp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/doorlockedgates"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    />
+                <EditText
+                    android:paddingEnd="5dp"
+                    android:paddingStart="5dp"
+                    android:id="@+id/et_doorlockedgates"
+                    android:textSize="14sp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:text="0"
+                    android:editable="false"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_business_name4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:padding="@dimen/fontStyle5">
+
+                <TextView
+                    android:paddingEnd="5dp"
+                    android:paddingStart="5dp"
+                    android:textSize="14sp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/refusedgates"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    />
+
+                <EditText
+                    android:paddingEnd="5dp"
+                    android:paddingStart="5dp"
+                    android:id="@+id/et_refusedgates"
+                    android:textSize="14sp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:text="0"
+                    android:editable="false"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_business_name5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:padding="@dimen/fontStyle5">
+
+                <TextView
+                    android:paddingEnd="5dp"
+                    android:paddingStart="5dp"
+                    android:textSize="14sp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/nosegregatedgates"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    />
+
+                <EditText
+                    android:paddingEnd="5dp"
+                    android:paddingStart="5dp"
+                    android:id="@+id/et_nosegregatedgates"
+                    android:textSize="14sp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:text="0"
+                    android:editable="false"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/textColor"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/padding_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/drygarbage"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/textColor"
+                android:paddingRight="@dimen/padding_10"
+                android:paddingTop="@dimen/padding_10"
+                android:paddingBottom="@dimen/padding_10"
+                android:layout_toRightOf="@id/img_openDrawer"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_10"
+                android:padding="@dimen/padding_10"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/drygarbageqty"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/textColor"
+                android:paddingRight="@dimen/padding_10"
+                android:paddingTop="@dimen/padding_10"
+                android:paddingBottom="@dimen/padding_10"
+                android:layout_toRightOf="@id/img_openDrawer"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/padding_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wetgarbage"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/textColor"
+                android:paddingRight="@dimen/padding_10"
+                android:paddingTop="@dimen/padding_10"
+                android:paddingBottom="@dimen/padding_10"
+                android:layout_toRightOf="@id/img_openDrawer"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_10"
+                android:padding="@dimen/padding_10"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/wetgarbageqty"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/textColor"
+                android:paddingRight="@dimen/padding_10"
+                android:paddingTop="@dimen/padding_10"
+                android:paddingBottom="@dimen/padding_10"
+                android:layout_toRightOf="@id/img_openDrawer"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/padding_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mixgarbage"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/textColor"
+                android:paddingRight="@dimen/padding_10"
+                android:paddingTop="@dimen/padding_10"
+                android:paddingBottom="@dimen/padding_10"
+                android:layout_toRightOf="@id/img_openDrawer"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_10"
+                android:padding="@dimen/padding_10"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mixgarbageqty"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/textColor"
+                android:paddingRight="@dimen/padding_10"
+                android:paddingTop="@dimen/padding_10"
+                android:paddingBottom="@dimen/padding_10"
+                android:layout_toRightOf="@id/img_openDrawer"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_scanqr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/submitnsend"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/padding_10"
+            android:textSize="@dimen/extraLargeTextSize"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/padding_10"
+            android:padding="@dimen/padding_10"
+            android:background="@drawable/btn_background"
+            android:backgroundTint="@color/colorBrown" />
+
+
+    </LinearLayout>
+
+</layout>

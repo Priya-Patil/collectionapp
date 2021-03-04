@@ -1,0 +1,208 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    android:background="@android:color/transparent"
+    android:padding="@dimen/padding_10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:background="@android:color/transparent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight=".47"
+                    android:background="@drawable/white_transparent_k" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".53"
+                    android:background="@drawable/radius_top" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="-50dp"
+                android:src="@drawable/happybin_remobg" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/radius_bottom"
+            android:orientation="vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:id="@+id/btn_scanQr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="40dp"
+                android:paddingLeft="40dp"
+                android:paddingTop="@dimen/padding_10"
+                android:paddingBottom="10dp"
+                android:layout_centerHorizontal="true"
+                android:shadowColor="#A8A8A8"
+                android:layout_margin="10dp"
+                android:layout_marginTop="5dp"
+                android:shadowDx="3"
+                android:shadowDy="2"
+                android:shadowRadius="8"
+                android:layout_below="@id/sp_vehicle"
+                android:text="SCAN QR CODE"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_background"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="4dp"
+                android:text="id:"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:textColor="@color/textColor"
+                android:id="@+id/txt_id"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="4dp"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/textColor"
+                android:text="@string/collectionStatus"
+                android:textAlignment="textStart" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioGroup">
+
+                <RadioButton
+                    android:id="@+id/radioMixGarbage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mix Garbage"
+                    android:checked="false"
+                    android:textColor="@color/textColor"
+                    android:drawableLeft="@drawable/ic_mixgarbage"
+                    android:textSize="16dp" />
+
+                <RadioButton
+                    android:id="@+id/radioLockHome"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" home lock "
+                    android:checked="false"
+                    android:drawableLeft="@drawable/ic_homelock"
+
+                    android:textColor="@color/textColor"
+                    android:textSize="16dp"  />
+
+                <RadioButton
+                    android:id="@+id/radioDiffGarbage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" diff garbage"
+                    android:textColor="@color/textColor"
+                    android:drawableLeft="@drawable/ic_classifygarbage"
+                    android:checked="false"
+                    android:textSize="16dp" />
+
+                <RadioButton
+                    android:id="@+id/radioNotGiven"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColor"
+                    android:text=" not given  "
+                    android:drawableLeft="@drawable/ic_notgiven"
+                    android:checked="false"
+                    android:textSize="16dp" />
+            </RadioGroup>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <!--#BDBDBD-->
+                <TextView
+                    android:id="@+id/btn_confirm"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="40dp"
+                    android:paddingLeft="50dp"
+                    android:paddingTop="@dimen/padding_10"
+                    android:paddingBottom="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:shadowColor="#A8A8A8"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="20dp"
+                    android:shadowDx="3"
+                    android:shadowDy="2"
+                    android:shadowRadius="8"
+                    android:layout_below="@id/sp_vehicle"
+                    android:text="OK"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:background="@drawable/btn_background"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="40dp"
+                    android:paddingLeft="40dp"
+                    android:paddingTop="@dimen/padding_10"
+                    android:paddingBottom="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:shadowColor="#A8A8A8"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="20dp"
+                    android:shadowDx="3"
+                    android:shadowDy="2"
+                    android:shadowRadius="8"
+                    android:layout_below="@id/sp_vehicle"
+                    android:text="CANCLE"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:background="@drawable/btn_background"
+                    android:textSize="12sp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

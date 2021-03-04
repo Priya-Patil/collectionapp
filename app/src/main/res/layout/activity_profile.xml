@@ -1,0 +1,59 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:id="@+id/rl_pic"
+            android:layout_centerHorizontal="true">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_profile"
+                android:layout_width="95dp"
+                android:layout_height="90dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/ic_baseline_add_box_24" />
+
+            <ImageView
+                android:id="@+id/iv_edit"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignEnd="@+id/civ_profile"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="120dp"
+                android:layout_alignRight="@+id/civ_profile"
+                tools:ignore="VectorDrawableCompat"
+                android:background="@drawable/ic_baseline_add_box_24"/>
+
+           <ImageView
+                android:id="@+id/iv_edit2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="120dp"
+                tools:ignore="VectorDrawableCompat"
+               android:layout_below="@+id/iv_edit"
+                android:background="@drawable/ic_baseline_add_box_24"/>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Search"
+               android:id="@+id/btn_search"
+                android:layout_marginTop="200dp"
+
+                />
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+</layout>

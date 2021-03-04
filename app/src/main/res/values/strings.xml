@@ -1,0 +1,127 @@
+<resources>
+    <string name="app_name">Garbage Collector</string>
+    <string name="home">Home</string>
+    <string name="subsription">सदस्यता</string>
+    <string name="onDemandPickup">मागणी वर उचलला</string>
+    <string name="splPickup">विशेष संकलन</string>
+    <string name="request">विनंती</string>
+    <string name="payments">देय</string>
+    <string name="account">खाते</string>
+    <string name="notification">अधिसूचना</string>
+    <string name="WastCollOndemd">मागणीनुसार कचरा संकलन</string>
+    <string name="Payment">देय</string>
+    <string name="raiseIsuue">एखादा मुद्दा उपस्थित करा</string>
+    <string name="TrackWaste">कचरा संग्रहण मागोवा</string>
+    <string name="Feedback">अभिप्राय</string>
+    <string name="option">कृपया एक पर्याय निवडा</string>
+    <string name="notREgular">कचरा गोळा करणारे नियमित नाहीत</string>
+    <string name="navbottomtext">Version 0.1 \n2021 App.All rights reserved.\nApps Terms and Conditions and Privacy policy</string>
+    <string name="notOnTime">कचरा गोळा करणारा वेळ सांभाळत नाही</string>
+    <string name="notScanning">स्कॅनिंग न करता कचरा गोळा करणे</string>
+    <string name="wrongSelection">चुकीचा पर्याय निवडला</string>
+    <string name="notProffesional">कचरा गोळा करणारा व्यावसायिक नाही / असभ्य आहे</string>
+    <string name="notpacedBins">कचरा गोळा झाल्यावर कचर्‍याच्या डब्या व्यवस्थित ठेवल्या नव्हत्या</string>
+    <string name="litteringWalkway">कचरा गोळा करणारे पदपथावर कचरा टाकत आहेत</string>
+    <string name="sendFeedback">अभिप्राय पाठवा</string>
+    <string name="check_internet">Check Internet Connection</string>
+    <string name="accept"> मी या अटी, गोपनीयता धोरण आणि नियमांशी सहमत आहे </string>
+    <string name="notificationTitle">" सूचना शीर्षक"</string>
+
+    <!--Engineer-->
+    <string name="viewrout">मार्ग पहा</string>
+    <string name="viewrout1">तक्रार</string>
+    <!--<string name="viewrout1">मार्ग\nपहा</string>-->
+
+    <string name="wastecollection">कचरा संग्रह</string>
+    <string name="complaint">तक्रार</string>
+    <string name="wastecollection1">कचरा\nसंग्रह</string>
+
+    <string name="tripsummary">फेरी यादी</string>
+    <string name="tripsummary1">फेरी\nयादी</string>
+
+    <string name="wastecollectionondemand">कचरा संकलन</string>
+    <string name="wastecollectionondemand1">कचरा\nसंकलन</string>
+
+    <string name="complaintnotification">तक्रार सूचना</string>
+    <string name="complaintnotification1">तक्रार\nसूचना</string>
+
+    <string name="paymentcollection">देय यादी</string>
+    <string name="paymentcollection1">देय\nयादी</string>
+
+    <string name="addhousegate">घर / गेट जोडा</string>
+    <string name="addhousegate1">घर\nजोडा</string>
+
+    <string name="housegatesummary">घर / गेट फेरी यादी</string>
+    <string name="ministry">गृहनिर्माण व शहरी कामकाज मंत्रालय</string>
+    <string name="govtofindia">भारत सरकार</string>
+    <string name="updateroute">मार्ग बदला</string>
+    <string name="route">मार्ग</string>
+    <string name="dooraddress">दाराचा पत्ता</string>
+    <string name="scan">स्कॅन क्यूआर</string>
+    <string name="paymentwait">रक्कम प्रतीक्षा </string>
+    <string name="notpaid">- पैसे दिले नाहीत</string>
+    <string name="paid">- पैसे दिले</string>
+    <string name="month">महिना</string>
+    <string name="date">
+महिना जून 2019
+रक्कम 10</string>
+    <string name="wastestatus">कचरा संकलन स्थिती</string>
+    <string name="totalgateend">एकूण दरवाजे समाप्त</string>
+    <string name="segregatedgates">वेगवेगळे वेशी</string>
+    <string name="doorlockedgates">दार बंदी दरवाजे</string>
+    <string name="refusedgates">दरवाजे नकार दिला</string>
+    <string name="nosegregatedgates">कचरा वेगळा केला नाही</string>
+    <string name="drygarbage">कोरडा कचरा</string>
+    <string name="paymentdooraddress">देय दाराचा पत्ता</string>
+    <string name="paymentdooraddresshist">देय दाराची पत्ता यादी</string>
+    <string name="drygarbageqty">कोरडा कचरा (किलो मध्ये)(पर्यायी)</string>
+    <string name="wetgarbage">ओला कचरा</string>
+    <string name="wetgarbageqty">ओला कचरा (किलो मध्ये)(पर्यायी)</string>
+    <string name="mixgarbage">मिश्र कचरा</string>
+    <string name="totalhouseadded">एकूण नोंदणी घर</string>
+    <string name="selctlocalurbanbody">शहरी स्थानिक संस्था निवडा</string>
+    <string name="ulb">शहरी स्थानिक संस्था </string>
+    <string name="ward">वॉर्ड</string>
+    <string name="selectward"> वार्ड निवडा</string>
+    <string name="locality"> परिसर</string>
+    <string name="sublocality"> उपपरिसर</string>
+    <string name="selectlocality"> परिसर निवडा</string>
+    <string name="category"> श्रेणी </string>
+    <string name="selectcategory"> श्रेणी निवडा</string>
+    <string name="selectsubcategory">उप श्रेणी निवडा</string>
+    <string name="subcategory">उप श्रेणी </string>
+    <string name="selectsublocality">उपपरिसर निवडा</string>
+    <string name="getcoordinates">अक्षांश रेखांश मिळवा</string>
+    <string name="addgateorhouse">नोंदणी घर किंवा गेट</string>
+    <string name="adddooraddres">घर नोंदणी</string>
+    <string name="mixgarbageqty">मिश्र कचरा (किलो मध्ये)(पर्यायी)</string>
+    <string name="submitnsend">सबमिट करा</string>
+    <string name="india">भारत</string>
+    <string name="name">नाव</string>
+    <string name="mobilenumber">दूरध्वनी क्रमांक</string>
+    <string name="numberoffamilies">कुटुंबांची संख्या</string>
+    <string name="nagarpanchayat">नगर पंचायत</string>
+    <string name="areameasurement">क्षेत्र मोजमाप</string>
+    <string name="selectarea">युनिट मोजमाप</string>
+    <string name="wastegeneration">कचरा निर्मिती</string>
+    <string name="kg1">0 &#8211; 40 किलो</string>
+    <string name="kg2">41 &#8211; 70 किलो</string>
+    <string name="kg3">71 &#8211; 100 किलो</string>
+    <string name="kg4">100 किलो वरील</string>
+    <string name="genebarcode">बारकोड व्युत्पन्न करा</string>
+    <string name="submit">प्रस्तुत करणे</string>
+    <string name="pleaseclickonbackbutton">कृपया पुढे जाण्यासाठी बॅक बटणावर क्लिक करा</string>
+    <string name="collectionandtransportation">संग्रह आणि परिवहन अॅप स्वच्छ अभियान (शहरी)</string>
+    <string name="enggId">कर्माचारी आयडी: </string>
+    <string name="onDuty">"ऑन ड्युटी "</string>
+    <string name="truck">ट्रक</string>
+    <string name="google_maps_key">AIzaSyCReNbVugij5vzSZqG6EKZIR--HvuhLFyk</string>
+    <string name="selectdate">तारीख निवडा</string>
+    <string name="search">Search</string>
+
+    <string name="username">Mobile</string>
+    <string name="pass">Password</string>
+    <string name="dumpyard">डंपयार्ड</string>
+    <string name="collectionStatus">Waste Collection Status</string>
+
+</resources>
